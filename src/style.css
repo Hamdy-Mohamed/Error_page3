@@ -1,0 +1,87 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: 500ms;
+}
+
+body{
+    background-color: #EEE;
+    background-image: linear-gradient(to left top, #0086ff, #0080ea, #0079d6, #0072c1, #166bac);
+}
+html{
+    font-size: 12px;
+}
+
+.containar{
+    width: auto;
+}
+section{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+}
+section div{
+    width: 100%;
+}
+section div img{
+    height: 30rem;
+    width: 100%;
+    margin: auto;
+}
+section div h1{
+    color: #12E7B8;
+    font-size: 4rem;
+    font-family: cursive;
+}
+section div p{
+    width: 51rem;
+    font-size: 2rem;
+    font-family: monospace;
+}
+section div button{
+    height: 3.5rem;
+    width: 200px;
+    margin-top: 2rem;
+    background: transparent;
+    border-radius: 1rem;
+    border: 1px solid #12E7B8;
+    
+}
+section div button:hover{
+    background: #12E7B8;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width:600px) {
+    html{
+        font-size: 8px;
+    }
+    section div p{
+        width: 32rem;
+    }
+}
+
+@media only screen and (min-width:1440px){
+    html{
+        font-size: 15px;
+    }
+    section div button{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width:2560px){
+    html{
+        font-size: 20px;
+    }
+    section div button {
+        font-size: 28px;
+    }
+}
